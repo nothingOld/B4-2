@@ -1,0 +1,6 @@
+3040  01:56:08.746420 kill(3040, SIGTERM) = 0
+3040  01:56:08.746952 --- SIGTERM {si_signo=SIGTERM, si_code=SI_USER, si_pid=3040, si_uid=1267601390} ---
+3040  01:56:08.748286 +++ killed by SIGTERM +++
+3039  01:56:08.752313 tgkill(3039, 3039, SIGTERM) = 0
+3039  01:56:08.752338 --- SIGTERM {si_signo=SIGTERM, si_code=SI_TKILL, si_pid=3039, si_uid=1267601390} ---
+3039  01:56:08.752495 +++ killed by SIGTERM +++

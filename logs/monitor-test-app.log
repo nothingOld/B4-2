@@ -1,0 +1,38 @@
+>>> Starting Agent Boot Sequence...
+[1/6] Checking User Account               [OK]
+   ... Running as service user 'sevencvter4085' (uid=1267601390)
+[2/6] Verifying Environment Variables     [OK]
+   ... All required Envs correct
+[3/6] Checking Required Files             [OK]
+   ... Verified 'secret.key' with correct key string.
+[4/6] Checking Port Availability          [OK]
+   ... Port 15034 is available.
+[5/6] Verifying Log Permission            [OK]
+   ... Log directory is writable: /home/sevencvter4085/agent-app-leak/logs
+[6/6] Verifying Mission Environment       [OK]
+   ... MEMORY_LIMIT=256MB, CPU_MAX_OCCUPY=80%, MULTI_THREAD_ENABLE=True
+------------------------------------------------------------
+All Boot Checks Passed!
+Agent READY
+2026-11-13 23:17:18,282 [INFO] [SafetyGuard] Process priority lowered (nice=10).
+2026-11-13 23:17:18,282 [INFO] Agent listening at port 15034
+
+==================================================
+ [ Agent Initiate ] Resource Check 
+==================================================
+ [ MEMORY ] Limit: 256MB 		[ WARNING: Recommend Over 256MB ]
+ [ CPU    ] Limit: 80%  		[ WARNING: Recommend Under 50% ]
+ [ THREAD ] Concurrency: True 		[ WARNING ]
+--------------------------------------------------
+ >>> SYSTEM WARNING: POTENTIAL DEADLOCK IN CONCURRENT MODE.
+==================================================
+
+2026-11-13 23:17:20,331 [INFO] [MemoryWorker] Current Heap: 25MB
+2026-11-13 23:17:23,386 [INFO] [MemoryWorker] Current Heap: 50MB
+2026-11-13 23:17:26,412 [INFO] [MemoryWorker] Current Heap: 75MB
+2026-11-13 23:17:29,466 [INFO] [MemoryWorker] Current Heap: 100MB
+2026-11-13 23:17:32,522 [INFO] [MemoryWorker] Current Heap: 125MB
+2026-11-13 23:17:35,576 [INFO] [MemoryWorker] Current Heap: 150MB
+2026-11-13 23:17:38,631 [INFO] [MemoryWorker] Current Heap: 175MB
+2026-11-13 23:17:41,686 [INFO] [MemoryWorker] Current Heap: 200MB
+2026-11-13 23:17:44,743 [INFO] [MemoryWorker] Current Heap: 225MB

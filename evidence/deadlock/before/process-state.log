@@ -1,0 +1,18 @@
+===== 최초 프로세스 상태 =====
+Sat Nov 14 00:51:58 KST 2026
+    PID    PPID STAT %CPU   RSS COMMAND
+   2652    1869 S     0.0   920 ./agent-leak-app-x86
+   2654    2652 SNl   0.0 16300 ./agent-leak-app-x86
+    PID     TID STAT %CPU   RSS COMMAND
+   2654    2654 SNl   0.0 16300 agent-leak-app-
+   2654    2660 SNl   0.0 16300 agent-leak-app-
+   2654    2661 SNl   0.0 16300 agent-leak-app-
+===== 5초 후 프로세스 상태 =====
+Sat Nov 14 00:52:03 KST 2026
+    PID    PPID STAT %CPU   RSS COMMAND
+   2652    1869 S     0.0   920 ./agent-leak-app-x86
+   2654    2652 SNl   0.0 16300 ./agent-leak-app-x86
+    PID     TID STAT %CPU   RSS COMMAND
+   2654    2654 SNl   0.0 16300 agent-leak-app-
+   2654    2660 SNl   0.0 16300 agent-leak-app-
+   2654    2661 SNl   0.0 16300 agent-leak-app-
