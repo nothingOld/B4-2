@@ -14,7 +14,7 @@ Linux 환경에서 제공된 `agent-leak-app-x86`의 리소스 장애를 재현�
 | 종료 신호 분석 | `strace` |
 | 분석 시나리오 | OOM / CPU 과점유 / Deadlock |
 
-과제에서 제공한 **실행 바이너리 `agent-leak-app-x86`는 이 저장소의 ZIP에 포함되어 있지 않습니다.** 직접 재현할 경우 과제 배포 파일을 별도로 준비해야 합니다. 또한 `api_keys/secret.key`는 실행에 필요한 테스트용 파일이며 제출 자료에 포함하지 않았습니다.
+`api_keys/secret.key`는 실행에 필요한 테스트용 파일이며 제출 자료에 포함하지 않았습니다.
 
 ## 2. 프로젝트 구성
 
@@ -86,7 +86,7 @@ printf '%s\n' 'agent_api_key_test' > "$AGENT_KEY_PATH/secret.key"
 chmod 600 "$AGENT_KEY_PATH/secret.key"
 ```
 
-위 문자열은 **과제 전용 테스트 값**이며 실제 서비스 API 비밀키가 아닙니다. 실제 비밀키·토큰·개인정보가 들어 있는 파일은 공개 저장소에 업로드하지 마세요.
+위 문자열은 **과제 전용 테스트 값**이며 실제 서비스 API 비밀키가 아닙니다.
 
 ### 기본 부트 테스트
 
